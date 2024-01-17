@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/type1"
+        android:title="식자재" />
+    <item
+        android:id="@+id/type2"
+        android:title="음식" />
+</menu>

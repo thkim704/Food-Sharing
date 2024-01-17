@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/comdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/comcontnent"
+            android:layout_alignTop="@id/comauthor"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/comcontnent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/comauthor"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repreg"
+        android:layout_below="@id/comment"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="답글" />
+
+        <Button
+            android:id="@+id/reg_rep_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="작성" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/rep_listView"
+        android:layout_below="@id/repreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:divider="#999999"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>
